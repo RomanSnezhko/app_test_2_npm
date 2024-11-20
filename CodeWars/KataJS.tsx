@@ -65,3 +65,22 @@ Solution:
 function divisibleBy(numbers, divisor){
     return numbers. filter ((number) => number % divisor === 0)
 }
+
+
+/*
+8 kyu Name Shuffler
+
+Description:
+
+Write a function that returns a string in which firstname is swapped with last name.
+
+Example(Input --> Output)
+
+"john McClane" --> "McClane john"
+
+Solution:
+*/
+function nameShuffler (str){
+    let [first, last] = str. split(' ')
+    return last + ' ' + first
+}
