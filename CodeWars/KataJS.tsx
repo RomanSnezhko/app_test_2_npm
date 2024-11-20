@@ -50,12 +50,18 @@ function stringy(size) {
 }
 
 /*
-8 kyu Super Duper Easy
+8 kyu Find numbers which are divisible by given number
 
 Description:
 
-Make a function that returns the value multiplied by 50 and increased by 6. If the value entered is a string it should return "Error".
+Complete the function which takes two arguments and returns all numbers which are divisible by the given divisor. First argument is an array of numbers and the second is the divisor.
+
+Example(Input1, Input2 --> Output)
+
+[1, 2, 3, 4, 5, 6], 2 --> [2, 4, 6]
 
 Solution:
 */
-problem = x => typeof x == 'number' ? x * 50 + 6 : 'Error'
+function divisibleBy(numbers, divisor){
+    return numbers. filter ((number) => number % divisor === 0)
+}
