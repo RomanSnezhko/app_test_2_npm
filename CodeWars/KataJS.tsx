@@ -217,25 +217,39 @@ Solution:
         }
 
 /*
-7 kyu
+7 kyu Remove All The Marked Elements of a List
 
 Description:
 
-
+Define a method/function that removes from a given array of integers all the values contained in a second array.
 
 Solution:
 */
-
+        Array.prototype.remove_ = (integer_list, values_list) =>
+            integer_list. filter (element => !values_list. includes(element));
 /*
-7 kyu
+7 kyu Triangular Treasure
 
 Description:
 
+riangular numbers are so called because of the equilateral triangular shape that they occupy when laid out as dots. i.e.
 
+1st (1)   2nd (3)    3rd (6)
+*          **        ***
+           *         **
+                     *
+You need to return the nth triangular number. You should return 0 for out of range values:
+
+For example: (Input --> Output)
+
+0 --> 0
+2 --> 3
+3 --> 6
+-10 --> 0
 
 Solution:
 */
-
+        const triangular = n => n > 0? n*(n+1)/2:0
 /*
 7 kyu
 
