@@ -147,4 +147,5 @@ Input strings will only contain letters. Note: keep the original order of the na
 
 Solution:
     */
+
     const friend = friends => friends. filter(element => element. length == 4)
