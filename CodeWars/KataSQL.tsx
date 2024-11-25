@@ -29,3 +29,110 @@ NOTE: Your solution should use pure SQL. Ruby is used within the test cases just
 */
 
 select * from books order by copies_sold desc limit 5;
+
+/*
+8 kyu SQL Basics: Mod
+
+Description:
+
+Given the following table 'decimals':
+
+** decimals table schema **
+
+id
+number1
+number2
+Return a table with one column (mod) which is the output of number1 modulus number2.
+
+Solution:
+*/
+select (number1 % number2) as mod from decimals;xx
+/*
+7 kyu
+
+Description:
+
+
+
+Solution:
+*/
+
+/*
+7 kyu
+
+Description:
+
+
+
+Solution:
+*/
+
+/*
+7 kyu
+
+Description:
+
+
+
+Solution:
+*/
+
+/*
+7 kyu
+
+Description:
+
+
+
+Solution:
+*/
+
+/*
+7 kyu
+
+Description:
+
+
+
+Solution:
+*/
+
+/*
+7 kyu
+
+Description:
+
+
+
+Solution:
+*/
+
+/*
+7 kyu
+
+Description:
+
+
+
+Solution:
+*/
+
+/*
+7 kyu
+
+Description:
+
+
+
+Solution:
+*/
+
+/*
+7 kyu
+
+Description:
+
+
+
+Solution:
+*/
