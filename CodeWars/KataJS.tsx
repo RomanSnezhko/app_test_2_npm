@@ -274,15 +274,15 @@ Solution:
             return temp.join("");
         }
 /*
-7 kyu
+7 kyu Remove anchor from URL
 
 Description:
-
+Complete the function/method so that it returns the url with anything after the anchor (#) removed.
 
 
 Solution:
 */
-
+        const removeUrlAnchor = url => url.replace(/#.+/i, "");
 /*
 7 kyu
 
