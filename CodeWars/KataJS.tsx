@@ -259,7 +259,20 @@ Description:
 
 Solution:
 */
+        "use strict";
 
+
+        function insertDash(num) {
+            const temp = num.toString().split("");
+
+            for(let i = 0; i < temp.length; i++) {
+                let current = temp[i],
+                    next    = temp[i + 1];
+                if(current % 2 !== 0 && next % 2 !== 0 && next) temp[i] = `${current}-`;
+            }
+
+            return temp.join("");
+        }
 /*
 7 kyu
 
