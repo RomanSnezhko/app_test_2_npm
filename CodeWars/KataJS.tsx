@@ -312,25 +312,42 @@ Solution:
             return Math.abs((final - given) / 86400);
         }
 /*
-7 kyu
+6 kyu Which are in?
 
 Description:
 
-
+Given two arrays of strings a1 and a2 return a sorted array r in lexicographical order of the strings of
+a1 which are substrings of strings of a2.
 
 Solution:
 */
 
 /*
-7 kyu
+7 kyu Multiply list by integer (with restrictions)
 
 Description:
 
+DESCRIPTION:
 
+Task:
+
+Given a list of integers l, return the list with each value multiplied by integer n.
+
+Restrictions:
+
+The code must not:
+
+contain *.
+use eval() or exec()
+contain for
+modify l
+Happy coding :)
 
 Solution:
 */
-
+        function multiply(mult, array) {
+            return array.map(item => Math.round( mult / (1 / item )));
+        }
 /*
 7 kyu
 
