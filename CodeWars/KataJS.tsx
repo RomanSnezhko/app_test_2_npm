@@ -441,15 +441,27 @@ Solution:
         }
 
 /*
-6 kyu
+7 kyu Common Substrings
 
 Description:
 
-
+Given 2 strings, your job is to find out if there is a substring that appears in both strings. You will return true if you find a substring that appears in both strings,
+or false if you do not. We only care about substrings that are longer than one letter long.
+ */
 
 Solution:
 */
-
+        function SubstringTest(str1, str2) {
+            const arr = [];
+            const arr1 = [];
+            for (let i = 0; i < str1.length - 1; i++) {
+                arr.push(str1.toLowerCase().slice(i, i + 2));
+            }
+            for (let i = 0; i < str2.length - 1; i++) {
+                arr1.push(str2.toLowerCase().slice(i, i + 2));
+            }
+            return arr.filter(v => arr1.includes(v)).length > 0;
+        }
 /*
 6 kyu
 
