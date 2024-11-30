@@ -311,19 +311,33 @@ Solution:
                 return Math.abs((final - loopGiven) / 86400) - Math.abs((final - given) / 86400);
             }
 
-            return Math.abs((final - given) / 86400);
+            return Math.abs((final - given) / 86400); уиуиуи ббдщььььь
         }
 /*
-6 kyu Which are in?
+6 kyu Combine objects
 
 Description:
 
-Given two arrays of strings a1 and a2 return a sorted array r in lexicographical order of the strings of
-a1 which are substrings of strings of a2.
+Your task is to write a function that takes two or more objects and returns a new object which combines all the input objects.
+
+All input object properties will have only numeric values. Objects are combined together so that the values of matching keys are added together.
 
 Solution:
 */
-
+        function combine(inputs) {
+            let argsArray = [...arguments];
+            let comboObj = {};
+            for (let i = 0; i < arguments.length; i++) {
+                for (let key in arguments[i]) {
+                    if (!comboObj[key]) {
+                        comboObj[key] = arguments[i][key];
+                    } else {
+                        comboObj[key] += arguments[i][key];
+                    }
+                }
+            }
+            return comboObj;
+        }
 /*
 7 kyu Multiply list by integer (with restrictions)
 
@@ -420,6 +434,7 @@ Solution:
 
         function toCamelCase(str){
             var regExp=/[-_]\w/ig;
+            // @ts-ignore
             return str.replace(regExp,function(match){
                 return match.charAt(1).toUpperCase();
             });
