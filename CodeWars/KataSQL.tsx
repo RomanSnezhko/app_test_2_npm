@@ -1,4 +1,4 @@
-/*
+﻿/*
 8 On the Canadian Border (SQL for Beginners #2)
 
 You are a border guard sitting on the Canadian border. You were given a list of travelers who have arrived at your gate today. You know that American, Mexican, and Canadian citizens don't need visas, so they can just continue their trips. You don't need to check their passports for visas! You only need to check the passports of citizens of all other countries!
@@ -74,21 +74,41 @@ select distinct on (team) employee_id, full_name, team, birth_date
 from employees
 order by team, birth_date desc
 /*
-7 kyu
+5 kyu Using LATERAL JOIN To Get Top N per Group
 
 Description:
 
+Given the schema presented below write a query, which uses a LATERAL join, that returns two most viewed posts for every category.
 
+Order the result set by:
+
+category name alphabetically
+number of post views largest to lowest
+post id lowest to largest
+Note:
+
+Some categories may have less than two or no posts at all.
+Two or more posts within the category can be tied by (have the same) the number of views. Use post id as a tie breaker - a post with a lower id gets a higher rank.
 
 Solution:
 */
+
+select categories.id as category_id, category, title, views, tmp.id as post_id
+from categories 
+left join lateral(
+    select *
+    from posts
+  where category_id = categories.id
+  order by views desc, posts.id asc
+  limit 2
+) as tmp
+on true
+order by category, views desc, post_id
 
 /*
 7 kyu
 
 Description:
-
-
 
 Solution:
 */
