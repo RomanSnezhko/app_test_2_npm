@@ -419,7 +419,11 @@ Solution:
 
 Description:
 
-Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case). The next words should be always capitalized.
+Complete the method/function so that it converts dash/underscore delimited words into camel casing.
+The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case,
+also often referred to as Pascal case). The next words should be always capitalized.
+ */
+ */
 
 Examples
 
@@ -463,15 +467,26 @@ Solution:
             return arr.filter(v => arr1.includes(v)).length > 0;
         }
 /*
-6 kyu
+6 kyu Area and perimeter of the ellipse
 
 Description:
 
+Based on the received dimensions, a and b, of an ellipse, calculare its area and perimeter.
 
+Example:
+
+Input: elipse(5,2)
+
+Output: "Area: 31.4, perimeter: 23.1"
+Note: The perimeter approximation formula you should use: π * (3/2(a+b) - sqrt(ab))
 
 Solution:
 */
-
+        function elipse(a,b){
+            let per = Math.round(Math.PI*((3/2)*(a+b)-Math.sqrt(a*b))*10)/10
+            let area = Math.round(Math.PI*a*b*10)/10
+            return `Area: ${area.toFixed(1)}, perimeter: ${per.toFixed(1)}`
+        }
 /*
 6 kyu
 

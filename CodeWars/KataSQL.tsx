@@ -116,9 +116,10 @@ Solution:
 /*
 7 kyu
 
+
 Description:
 
-
+SELECT LEFT(project, commits)я as project, RIGHT(address, contributors) as address FROM repositories;
 
 Solution:
 */
