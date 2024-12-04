@@ -29,3 +29,22 @@
     // }
     // alert('Your are Kill me, little bitch!')
     // alert ('Your needed ' + numberShots + ' shots' )
+
+    // Bank operation
+    const depositAount = 1000
+    const earlyRate = 15
+    const depositTermInYears = 2
+
+    let count = 0
+
+    function getDepositIncome(amount, rate, term) {
+        let depositIncome = 0
+        while (count < term) {
+            depositIncome = depositIncome + amount * (rate / 100)
+            count = count +1
+        }
+        return depositIncome
+    }
+const  income = getDepositIncome(depositAount, earlyRate, depositTermInYears)
+    console.log('count =', count)
+    console.log(income)
