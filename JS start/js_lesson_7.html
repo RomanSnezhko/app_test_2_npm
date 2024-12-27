@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>js_Lesson_7</title>
+    </head>
+    <body>
+
+        <script>
+                        //data base
+
+                        const headTitle = 'Французские "Рости"';
+                        const headTitleDescriptions1 =
+                            "Французы называют свою модификацию этого блюда «рости» (написание варьирует: rosti, rostis, r ö sti , r œ sti), а пришло это имя к ним от друзей-швейцарцев, которые пишут его r ö sti , но произносят несколько иначе: рёшти. А в Эльзасе у блюда есть другое, труднопроизносимое, название, заимствованное у немцев.";
+                        const headTitleDescriptions2 =
+                            "Если вы не слишком жаловали наши традиционные драники, потому что это «одна пресная картошка», то вам непременно понравится богатая на вкусовые оттенки французская версия.";
+
+                        // dataRecept1
+
+                        const nameRecept1 = "Базовый рецепт от мадам Коллет";
+                        const imageRecept1 =
+                            "https://www.novochag.ru/upload/img_cache/a33/a33d07352680e66b0cf5fbc46ea8a9a2_cropped_1332x1000.webp";
+                        const dataPublication = '1974 December "was born in Hell"';
+                        const instructionsRecept1 =
+                            "Натирайте 5-6 крупных картофелин на крупной тёрке и как следует отожмите массу!";
+                        const ingridientsRecept1 = "Добавляйте:";
+                        const ingridient1 = "2 яйца";
+                        const ingridient2 = "150 грамм тёртого сыра";
+                        const ingridient3 =
+                            "мелко нарезанные кусочки грудинки (они во Франции называются лардон). Вместо грудинки можно положить любые имеющиеся копчёности. Много не надо — они прежде всего для аромата.";
+                        const ingridient4 =
+                            "Можно (но не обязательно) добавить очень мелко нашинкованный лук: так получается сочнее.";
+                        const ingridient5 = null;
+                        const ingridient6 = null;
+                        const recomendationsrecept1 =
+                            "Получившуюся смесь можно посолить, но лично мне достаточно соли от сыра и лардона. Перец тоже на ваше усмотрение.";
+                        const cookingRecept1 = "Способ приготовления:"
+                        const preparationRecept1Step1 =
+                            "Перед жаркой массе стоит дать немного настояться (чтобы картофель пропитался ароматом сыра и копчёностей).";
+                        const preparationRecept1Step2 =
+                            "Из смеси нужно сформировать лепёшки и обжарить их с каждой стороны. Так как картофель в рецепте всё же сырой, держать на огне нужно в общей сложности минут 10 –15, чтобы довести его до готовности.";
+                        const preparationRecept1Step3 =
+                            "И конечно, жарить рости нужно непосредственно перед подачей.";
+                        const preparationRecept1Step4 = null;
+                        const preparationRecept1Step5 = null;
+                        const preparationRecept1Step6 = null;
+                        const surving = "Варианты и подача рости:"
+                        const survingRecomrndationsRecept1 =
+                            "В интернете вариантов рецепта рости множество. Например, рецепты без сыра, но, именно в сыре – «французский вкус». <p>Испортить рости практически невозможно. Добавьте в массу шампиньоны — тоже получается очень вкусно. Французы едят рости как без соуса («лучше хруст»), так и с ним.</p> <p> Подают рости с зелёным салатом, украшают петрушкой.</p>";
+
+                        //UI program
+
+                        document.write('<h1>', headTitle, '</h1>')
+                        document.write(headTitleDescriptions1)
+                        document.write('<p>', headTitleDescriptions2, '</p>')
+                        document.write('<h2>', nameRecept1, '</h2>')
+                        document.write('<img src ="', imageRecept1,'"/>')
+                        document.write('<p>', dataPublication, '</p>')
+                        document.write('<hr>', instructionsRecept1)
+                        document.write('<h2>',ingridientsRecept1,'</h2>')
+                        document.write('<ul>', '<li>',ingridient1, '</li>', '</ul>')
+                        document.write('<ul>', '<li>',ingridient2, '</li>', '</ul>')
+                        document.write('<ul>', '<li>',ingridient3, '</li>', '</ul>')
+                        document.write('<ul>', '<li>',ingridient4, '</li>', '</ul>')
+                        document.write('<p>', recomendationsrecept1, '</p>')
+                        document.write('<hr>', '<h2>', cookingRecept1, '</h2>')
+                        document.write('<ol>', '<li>',preparationRecept1Step1, '</li>', '<li>',preparationRecept1Step2, '<li>',preparationRecept1Step3, '</li>', '</ol>')
+                        document.write('<h2>', surving,'</h2>')
+                        document.write('<p>', survingRecomrndationsRecept1,'</p>')
+
+        </script>
+    </body>
+</html>
