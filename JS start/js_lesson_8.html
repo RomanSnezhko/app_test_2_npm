@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>js_Lesson_8</title>
+    </head>
+    <body>
+
+        <script>
+
+            // data Base
+
+            const greeting = "Предлагаем запомнить скороговорку для запоминания порядка расположения цветов в спектре солнечного света";
+            const colorPhrase = "Каждый(красный), охотник(оранжевый), желает(желтый), знать(зеленый), где(голубой), синий(синий), фазан(фиолетовый)";
+
+            const question1 = "Какой цвет идет первым в спекте солнечного света?"
+            const answer1 = "красный"
+
+            const question2 = "Какой цвет идет вторым в спекте солнечного света"
+            const answer2 = "оранжевый"
+
+            const question3 = "Какой цвет идет третьим в спекте солнечного света"
+            const answer3 = "желтый"
+
+            const question4 = "Какой цвет идет четвертым в спекте солнечного света"
+            const answer4 = "зеленый"
+
+            const question5 = "Какой цвет идет пятым в спекте солнечного света"
+            const answer5 = "голубой"
+
+            const question6 = "Какой цвет идет шестым в спекте солнечного света"
+            const answer6 = "синий"
+
+            const question7 = "Какой цвет идет седьмым в спекте солнечного света"
+            const answer7 = "фиолетовый"
+
+            let numbertAnswerCorrect = 0
+            let numberAnswerUncorrect = 0
+
+            const minPercentCorrectAnswer = 50
+            const numberAnswer = 7
+
+            // Programm
+
+            alert(greeting)
+            alert(colorPhrase)
+
+            // question1
+
+            const userAnswer1= prompt(question1)
+            if (answer1 ===userAnswer1){
+                numbertAnswerCorrect = numbertAnswerCorrect + 1
+            }
+            else{
+                numberAnswerUncorrect = numberAnswerUncorrect + 1
+            }
+
+            // question2
+
+            const userAnswer2= prompt(question2)
+            if (answer2 ===userAnswer2){
+                numbertAnswerCorrect = numbertAnswerCorrect + 1
+            }
+            else{
+                numberAnswerUncorrect = numberAnswerUncorrect + 1
+            }
+
+            // question3
+
+            const userAnswer3= prompt(question3)
+            if (answer3 ===userAnswer3){
+                numbertAnswerCorrect = numbertAnswerCorrect + 1
+            }
+            else{
+                numberAnswerUncorrect = numberAnswerUncorrect + 1
+            }
+
+            // question4
+
+            const userAnswer4= prompt(question4)
+            if (answer4 ===userAnswer4){
+                numbertAnswerCorrect = numbertAnswerCorrect + 1
+            }
+            else{
+                numberAnswerUncorrect = numberAnswerUncorrect + 1
+            }
+
+            // question5
+
+            const userAnswer5= prompt(question5)
+            if (answer5 ===userAnswer5){
+                numbertAnswerCorrect = numbertAnswerCorrect + 1
+            }
+            else{
+                numberAnswerUncorrect = numberAnswerUncorrect + 1
+            }
+
+            // question6
+
+            const userAnswer6= prompt(question6)
+            if (answer6 ===userAnswer6){
+                numbertAnswerCorrect = numbertAnswerCorrect + 1
+            }
+            else{
+                numberAnswerUncorrect = numberAnswerUncorrect + 1
+            }
+
+            // question7
+
+            const userAnswer7= prompt(question7)
+            if (answer7 ===userAnswer7){
+                numbertAnswerCorrect = numbertAnswerCorrect + 1
+            }
+            else{
+                numberAnswerUncorrect = numberAnswerUncorrect + 1
+            }
+
+            let correctAnswersPercent = numbertAnswerCorrect/numberAnswer*100
+
+            alert("Количество правильных ответов: " + numbertAnswerCorrect)
+            alert("Количество ошибок: " + numberAnswerUncorrect)
+
+           if (correctAnswersPercent>minPercentCorrectAnswer) {
+               alert("Превосходно")
+           } else {
+               alert("Потренируйся еще")
+           }
+
+        </script>
+    </body>
+</html>
