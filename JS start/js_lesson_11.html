@@ -16,32 +16,35 @@
 
     document.write("Hi, let's see what your wait tonight", '<br>')
 
-    let balance = window.prompt('Please enter amount of your money')
+    let balance = Number(window.prompt('Please enter amount of your money'))
 
-    if (balance >= condomPrice) {
-        balance = balance - condomPrice
-        document.write('condom purchased', '<br>', 'Your money:',balance, '<br>');
+    if (isNaN(balance)) {
+        document.write('Incorrect input', '<br>')
     } else {
-        document.write('Not enough money to bye condom', '<br>');
-    }
 
-    if (balance >= alcogolPrice) {
-        balance = balance - alcogolPrice
-        document.write('alcogol purchased', '<br>', 'Your money:',balance, '<br>');
-    } else {
-        document.write('Not enough money to bye alcogol', '<br>');
-    }
-    if (balance >= sweetsPrice) {
-        balance = balance - sweetsPrice
-        document.write('sweets purchased', '<br>', 'Your money:',balance, '<br>');
-    } else {
-        document.write('Not enough money to bye sweets', '<br>');
+        if (balance >= condomPrice) {
+            balance = balance - condomPrice
+            document.write('condom purchased', '<br>', 'Your money:', balance, '<br>');
+        } else {
+            document.write('Not enough money to bye condom', '<br>');
+        }
+
+        if (balance >= alcogolPrice) {
+            balance = balance - alcogolPrice
+            document.write('alcogol purchased', '<br>', 'Your money:', balance, '<br>');
+        } else {
+            document.write('Not enough money to bye alcogol', '<br>');
+        }
+        if (balance >= sweetsPrice) {
+            balance = balance - sweetsPrice
+            document.write('sweets purchased', '<br>', 'Your money:', balance, '<br>');
+        } else {
+            document.write('Not enough money to bye sweets', '<br>');
+        }
+
     }
 
     document.write('God luck guy !!!')
-
-
-
 
 
 </script>
