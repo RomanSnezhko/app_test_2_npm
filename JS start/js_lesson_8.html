@@ -1,131 +1,140 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>js_Lesson_8</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8"/>
+    <title>js_Lesson_8</title>
+</head>
+<body>
 
-        <script>
+<script>
 
-            // data Base
+    // data Base
 
-            const greeting = "Предлагаем запомнить скороговорку для запоминания порядка расположения цветов в спектре солнечного света";
-            const colorPhrase = "Каждый(красный), охотник(оранжевый), желает(желтый), знать(зеленый), где(голубой), синий(синий), фазан(фиолетовый)";
+    const phrases = {
+        phrase1: {
+            qestion1: "Какой цвет идет первым в спекте солнечного света?",
+            answer1: "красный",
+        },
+        phrase2: {
+            qestion2: "Какой цвет идет вторым в спекте солнечного света",
+            answer2: "оранжевый",
+        },
+        phrase3: {
+            qestion3: "Какой цвет идет третьим в спекте солнечного света",
+            answer3: "желтый",
+        },
+        phrase4: {
+            qestion4: "Какой цвет идет четвертым в спекте солнечного света",
+            answer4: "зелёный",
+        },
+        phrase5: {
+            qestion5: "Какой цвет идет пятым в спекте солнечного света?",
+            answer5: "голубой",
+        },
+        phrase6: {
+            qestion6: "Какой цвет идет шестым в спекте солнечного света?",
+            answer6: "синий",
+        },
+        phrase7: {
+            qestion7: "Какой цвет идет седьмым в спекте солнечного света?",
+            answer7: "фиолетовый",
+        },
+    }
 
-            const question1 = "Какой цвет идет первым в спекте солнечного света?"
-            const answer1 = "красный"
+    const numberAnswers = {
+        correct: 0,
+        uncorrect: 0,
+        allAnswers: 7,
+    }
 
-            const question2 = "Какой цвет идет вторым в спекте солнечного света"
-            const answer2 = "оранжевый"
+    const basicPrases = {
+        greeting: "Предлагаем запомнить скороговорку для запоминания порядка расположения цветов в спектре солнечного света",
+        colorPhrase: "Каждый(красный), охотник(оранжевый), желает(желтый), знать(зеленый), где(голубой), синий(синий), фазан(фиолетовый)",
+        positiveResult: "Превосходно",
+        negativeResult: "Потренируйся еще",
+    }
 
-            const question3 = "Какой цвет идет третьим в спекте солнечного света"
-            const answer3 = "желтый"
+    const minPercentCorrectAnswer = 50
 
-            const question4 = "Какой цвет идет четвертым в спекте солнечного света"
-            const answer4 = "зеленый"
+    // Programm
 
-            const question5 = "Какой цвет идет пятым в спекте солнечного света"
-            const answer5 = "голубой"
+    alert(basicPrases.greeting)
+    alert(basicPrases.colorPhrase)
 
-            const question6 = "Какой цвет идет шестым в спекте солнечного света"
-            const answer6 = "синий"
+    // question1
 
-            const question7 = "Какой цвет идет седьмым в спекте солнечного света"
-            const answer7 = "фиолетовый"
+    const userAnswer1 = prompt(phrases.phrase1.qestion1)
+    if (phrases.phrase1.answer1 === userAnswer1) {
+        numberAnswers.correct = numberAnswers.correct + 1
+    } else {
+        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+    }
 
-            let numbertAnswerCorrect = 0
-            let numberAnswerUncorrect = 0
+    // question2
 
-            const minPercentCorrectAnswer = 50
-            const numberAnswer = 7
+    const userAnswer2 = prompt(phrases.phrase2.qestion2,)
+    if (phrases.phrase2.answer2 === userAnswer2) {
+        numberAnswers.correct = numberAnswers.correct + 1
+    } else {
+        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+    }
 
-            // Programm
+    // question3
 
-            alert(greeting)
-            alert(colorPhrase)
+    const userAnswer3 = prompt(phrases.phrase3.qestion1,)
+    if (phrases.phrase3.answer1 === userAnswer3) {
+        numberAnswers.correct = numberAnswers.correct + 1
+    } else {
+        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+    }
 
-            // question1
+    // question4
 
-            const userAnswer1= prompt(question1)
-            if (answer1 ===userAnswer1){
-                numbertAnswerCorrect = numbertAnswerCorrect + 1
-            }
-            else{
-                numberAnswerUncorrect = numberAnswerUncorrect + 1
-            }
+    const userAnswer4 = prompt(phrases.phrase4.qestion4,)
+    if (phrases.phrase1.answer4 === userAnswer4) {
+        numberAnswers.correct = numberAnswers.correct + 1
+    } else {
+        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+    }
 
-            // question2
+    // question5
 
-            const userAnswer2= prompt(question2)
-            if (answer2 ===userAnswer2){
-                numbertAnswerCorrect = numbertAnswerCorrect + 1
-            }
-            else{
-                numberAnswerUncorrect = numberAnswerUncorrect + 1
-            }
+    const userAnswer5 = prompt(phrases.phrase5.qestion5,)
+    if (phrases.phrase5.answer5 === userAnswer5) {
+        numbertAnswers.correct = numbertAnswers.correct + 1
+    } else {
+        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+    }
 
-            // question3
+    // question6
 
-            const userAnswer3= prompt(question3)
-            if (answer3 ===userAnswer3){
-                numbertAnswerCorrect = numbertAnswerCorrect + 1
-            }
-            else{
-                numberAnswerUncorrect = numberAnswerUncorrect + 1
-            }
+    const userAnswer6 = prompt(phrases.phrase6.qestion6,)
+    if (phrases.phrase6.answer6 === userAnswer6) {
+        numbertAnswers.correct = numbertAnswers.correct + 1
+    } else {
+        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+    }
 
-            // question4
+    // question7
 
-            const userAnswer4= prompt(question4)
-            if (answer4 ===userAnswer4){
-                numbertAnswerCorrect = numbertAnswerCorrect + 1
-            }
-            else{
-                numberAnswerUncorrect = numberAnswerUncorrect + 1
-            }
+    const userAnswer7 = prompt(phrases.phrase7.qestion1,)
+    if (phrases.phrase7.answer7 === userAnswer7) {
+        numbertAnswers.correct = numbertAnswers.correct + 1
+    } else {
+        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+    }
 
-            // question5
+    let correctAnswersPercent = numberAnswers.correct / numberAnswers.allAnswers * 100
 
-            const userAnswer5= prompt(question5)
-            if (answer5 ===userAnswer5){
-                numbertAnswerCorrect = numbertAnswerCorrect + 1
-            }
-            else{
-                numberAnswerUncorrect = numberAnswerUncorrect + 1
-            }
+    alert("Количество правильных ответов: " + numberAnswers.correct)
+    alert("Количество ошибок: " + numberAnswers.uncorrect)
 
-            // question6
+    if (correctAnswersPercent > minPercentCorrectAnswer) {
+        alert(basicPrases.positiveResult)
+    } else {
+        alert(basicPrases.negativeResult)
+    }
 
-            const userAnswer6= prompt(question6)
-            if (answer6 ===userAnswer6){
-                numbertAnswerCorrect = numbertAnswerCorrect + 1
-            }
-            else{
-                numberAnswerUncorrect = numberAnswerUncorrect + 1
-            }
-
-            // question7
-
-            const userAnswer7= prompt(question7)
-            if (answer7 ===userAnswer7){
-                numbertAnswerCorrect = numbertAnswerCorrect + 1
-            }
-            else{
-                numberAnswerUncorrect = numberAnswerUncorrect + 1
-            }
-
-            let correctAnswersPercent = numbertAnswerCorrect/numberAnswer*100
-
-            alert("Количество правильных ответов: " + numbertAnswerCorrect)
-            alert("Количество ошибок: " + numberAnswerUncorrect)
-
-           if (correctAnswersPercent>minPercentCorrectAnswer) {
-               alert("Превосходно")
-           } else {
-               alert("Потренируйся еще")
-           }
-
-        </script>
-    </body>
+</script>
+</body>
 </html>
