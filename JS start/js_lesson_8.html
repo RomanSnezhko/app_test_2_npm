@@ -10,36 +10,36 @@
 
     // data Base
 
-    const phrases = {
-        phrase1: {
+    const qestions = [
+        {
             qestion1: "Какой цвет идет первым в спекте солнечного света?",
             answer1: "красный",
         },
-        phrase2: {
+        {
             qestion2: "Какой цвет идет вторым в спекте солнечного света",
             answer2: "оранжевый",
         },
-        phrase3: {
+        {
             qestion3: "Какой цвет идет третьим в спекте солнечного света",
             answer3: "желтый",
         },
-        phrase4: {
+        {
             qestion4: "Какой цвет идет четвертым в спекте солнечного света",
             answer4: "зелёный",
         },
-        phrase5: {
+        {
             qestion5: "Какой цвет идет пятым в спекте солнечного света?",
             answer5: "голубой",
         },
-        phrase6: {
+        {
             qestion6: "Какой цвет идет шестым в спекте солнечного света?",
             answer6: "синий",
         },
-        phrase7: {
+        {
             qestion7: "Какой цвет идет седьмым в спекте солнечного света?",
             answer7: "фиолетовый",
         },
-    }
+    ]
 
     const numberAnswers = {
         correct: 0,
@@ -63,8 +63,8 @@
 
     // question1
 
-    const userAnswer1 = prompt(phrases.phrase1.qestion1)
-    if (phrases.phrase1.answer1 === userAnswer1) {
+    const userAnswer1 = prompt(qestions[0].qestion1)
+    if (qestions[0].answer1 === userAnswer1) {
         numberAnswers.correct = numberAnswers.correct + 1
     } else {
         numberAnswers.uncorrect = numberAnswers.uncorrect + 1
@@ -72,8 +72,8 @@
 
     // question2
 
-    const userAnswer2 = prompt(phrases.phrase2.qestion2,)
-    if (phrases.phrase2.answer2 === userAnswer2) {
+    const userAnswer2 = prompt(qestions[1].qestion2,)
+    if (qestions[1].answer2 === userAnswer2) {
         numberAnswers.correct = numberAnswers.correct + 1
     } else {
         numberAnswers.uncorrect = numberAnswers.uncorrect + 1
@@ -81,8 +81,8 @@
 
     // question3
 
-    const userAnswer3 = prompt(phrases.phrase3.qestion1,)
-    if (phrases.phrase3.answer1 === userAnswer3) {
+    const userAnswer3 = prompt(qestions[2].qestion1,)
+    if (qestions[2].answer1 === userAnswer3) {
         numberAnswers.correct = numberAnswers.correct + 1
     } else {
         numberAnswers.uncorrect = numberAnswers.uncorrect + 1
@@ -90,8 +90,8 @@
 
     // question4
 
-    const userAnswer4 = prompt(phrases.phrase4.qestion4,)
-    if (phrases.phrase1.answer4 === userAnswer4) {
+    const userAnswer4 = prompt(qestions[3].qestion4,)
+    if (qestions[3].answer4 === userAnswer4) {
         numberAnswers.correct = numberAnswers.correct + 1
     } else {
         numberAnswers.uncorrect = numberAnswers.uncorrect + 1
@@ -99,27 +99,27 @@
 
     // question5
 
-    const userAnswer5 = prompt(phrases.phrase5.qestion5,)
-    if (phrases.phrase5.answer5 === userAnswer5) {
-        numbertAnswers.correct = numbertAnswers.correct + 1
+    const userAnswer5 = prompt(qestions[4].qestion5,)
+    if (qestions[4].answer5 === userAnswer5) {
+        numberAnswers.correct = numberAnswers.correct + 1
     } else {
         numberAnswers.uncorrect = numberAnswers.uncorrect + 1
     }
 
     // question6
 
-    const userAnswer6 = prompt(phrases.phrase6.qestion6,)
-    if (phrases.phrase6.answer6 === userAnswer6) {
-        numbertAnswers.correct = numbertAnswers.correct + 1
+    const userAnswer6 = prompt(qestions[5].qestion6,)
+    if (qestions[5].answer6 === userAnswer6) {
+        numberAnswers.correct = numberAnswers.correct + 1
     } else {
         numberAnswers.uncorrect = numberAnswers.uncorrect + 1
     }
 
     // question7
 
-    const userAnswer7 = prompt(phrases.phrase7.qestion1,)
-    if (phrases.phrase7.answer7 === userAnswer7) {
-        numbertAnswers.correct = numbertAnswers.correct + 1
+    const userAnswer7 = prompt(qestions[6].qestion1,)
+    if (qestions[6].answer7 === userAnswer7) {
+        numberAnswers.correct = numberAnswers.correct + 1
     } else {
         numberAnswers.uncorrect = numberAnswers.uncorrect + 1
     }
