@@ -311,33 +311,19 @@ Solution:
                 return Math.abs((final - loopGiven) / 86400) - Math.abs((final - given) / 86400);
             }
 
-            return Math.abs((final - given) / 86400); уиуиуи ббдщььььь
+            return Math.abs((final - given) / 86400);
         }
 /*
-6 kyu Combine objects
+6 kyu Which are in?
 
 Description:
 
-Your task is to write a function that takes two or more objects and returns a new object which combines all the input objects.
-
-All input object properties will have only numeric values. Objects are combined together so that the values of matching keys are added together.
+Given two arrays of strings a1 and a2 return a sorted array r in lexicographical order of the strings of
+a1 which are substrings of strings of a2.
 
 Solution:
 */
-        function combine(inputs) {
-            let argsArray = [...arguments];
-            let comboObj = {};
-            for (let i = 0; i < arguments.length; i++) {
-                for (let key in arguments[i]) {
-                    if (!comboObj[key]) {
-                        comboObj[key] = arguments[i][key];
-                    } else {
-                        comboObj[key] += arguments[i][key];
-                    }
-                }
-            }
-            return comboObj;
-        }
+
 /*
 7 kyu Multiply list by integer (with restrictions)
 
@@ -419,11 +405,7 @@ Solution:
 
 Description:
 
-Complete the method/function so that it converts dash/underscore delimited words into camel casing.
-The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case,
-also often referred to as Pascal case). The next words should be always capitalized.
- */
- */
+Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case). The next words should be always capitalized.
 
 Examples
 
@@ -445,48 +427,25 @@ Solution:
         }
 
 /*
-7 kyu Common Substrings
+6 kyu
 
 Description:
 
-Given 2 strings, your job is to find out if there is a substring that appears in both strings. You will return true if you find a substring that appears in both strings,
-or false if you do not. We only care about substrings that are longer than one letter long.
- */
+
 
 Solution:
 */
-        function SubstringTest(str1, str2) {
-            const arr = [];
-            const arr1 = [];
-            for (let i = 0; i < str1.length - 1; i++) {
-                arr.push(str1.toLowerCase().slice(i, i + 2));
-            }
-            for (let i = 0; i < str2.length - 1; i++) {
-                arr1.push(str2.toLowerCase().slice(i, i + 2));
-            }
-            return arr.filter(v => arr1.includes(v)).length > 0;
-        }
+
 /*
-6 kyu Area and perimeter of the ellipse
+6 kyu
 
 Description:
 
-Based on the received dimensions, a and b, of an ellipse, calculare its area and perimeter.
 
-Example:
-
-Input: elipse(5,2)
-
-Output: "Area: 31.4, perimeter: 23.1"
-Note: The perimeter approximation formula you should use: π * (3/2(a+b) - sqrt(ab))
 
 Solution:
 */
-        function elipse(a,b){
-            let per = Math.round(Math.PI*((3/2)*(a+b)-Math.sqrt(a*b))*10)/10
-            let area = Math.round(Math.PI*a*b*10)/10
-            return `Area: ${area.toFixed(1)}, perimeter: ${per.toFixed(1)}`
-        }
+
 /*
 6 kyu
 
