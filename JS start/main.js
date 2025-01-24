@@ -154,7 +154,44 @@
 // console.log(myRoom[7].coast.volume);
 // console.log(myRoom);
 
-// let shopKorona = [
+// let goods = {
+//     Milk:
+//         {
+//             name: "Milk",
+//             price: 2,
+//             prioritet: "medium"
+//         },
+//     Meat:
+//         {
+//             name: "Meat",
+//             price: 15,
+//             prioritet: "hard"
+//         },
+//     Bread:
+//         {
+//             name: "Bread",
+//             price: 1,
+//             prioritet: "Easy"
+//         }
+// }
+//
+// document.write(goods.Milk.name);
+
+// let departments = [
+//
+//     {
+//         nameDepartment: "Test " +
+//             "department",
+//         numberRacks: 3,
+//         numberRegisters: null,
+//         goods: {
+//             good1: goods.Milk,
+//             good2: goods.Meat,
+//             good3: goods.Bread,
+//             good4: null,
+//             good5: null
+//         }
+//     },
 //     {
 //         nameDepartment: "Pet Products",
 //         numberRacks: 3,
@@ -251,9 +288,31 @@
 //             good5: null
 //         }
 //     },
-//
-//
 // ];
 
+// let studentsMark = [4, 5, 3, 4, 5, 3, 4 ]
+//
+// for (let i = 0; i < studentsMark.length; i++) {
+//
+//     document.write(studentsMark[i], "<br>");
+// }
 
-console.log(shopKorona[7].numberRegisters);
+
+let books = [
+    ["AA", "AB", "AC", "AD"],
+    ["BB", "BC", "BD", "BE"],
+    ["CC", "CD", "CE", "CF"],
+    ["DD", "DE", "DF", "DG"],
+    ["oo", "oo", "oo", "oo"],
+]
+
+for (let i = 0; i < books.length; i++) {
+
+    let subbooks = books[i]
+
+    for (let j = 0; j < subbooks.length; j++) {
+
+        document.write(subbooks[j] + "<br>");
+    }
+}
+
