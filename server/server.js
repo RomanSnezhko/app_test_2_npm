@@ -1,11 +1,13 @@
 const http = require('http');
-let reqestCount = 0
+let requestsCount = 0
 
 const server = http.createServer((reqest, response) => {
-    reqestCount++
-    response.wrinte("Wear")
+
+    requestsCount++
+
+    response.write('Hi: ' + requestsCount)
     response.end()
 })
 server.listen(3003)
 
-console.log('safw')
+
