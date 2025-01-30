@@ -19,71 +19,177 @@
 
 <body>
 
-<h1>Быстрый старт</h1>
-<h2>Создание и вложение компонентов</h2>
-<p>Приложения React состоят из компонентов. Компонент — это часть пользовательского интерфейса, которая имеет свою
-    собственную логику и внешний вид. Компонент может быть маленьким, как кнопка, или большим, как целая страница.
+<!--<h1>Быстрый старт</h1>-->
+<!--<h2>Создание и вложение компонентов</h2>-->
+<!--<p>Приложения React состоят из компонентов. Компонент — это часть пользовательского интерфейса, которая имеет свою-->
+<!--    собственную логику и внешний вид. Компонент может быть маленьким, как кнопка, или большим, как целая страница.-->
 
-    Компоненты React — это функции JavaScript, которые возвращают разметку:
-</p>
-<h3>Запись разметки с помощью JSX</h3>
-<p>Синтаксис разметки, который вы видели выше, называется JSX. Он необязателен, но большинство проектов React используют
-    JSX для удобства. Все инструменты, которые мы рекомендуем для локальной разработки поддерживают JSX из коробки.
-    В JSX более строгие требования, чем в HTML. Вы должны закрывать теги типа &ltbr/&gt. Ваш компонент также не может
-    возвращать несколько JSX-тегов</p>
-<h4>Добавление стилей</h4>
-<p>React не предписывает, как добавлять файлы CSS. В простейшем случае вы добавляете тег
-    &ltlink&gt в HTML. Если вы используете инструмент сборки или фреймворк, обратитесь к его документации, чтобы узнать,
-    как
-    добавить CSS-файл в ваш проект.
-</p>
-<p><strong>Ну и естественно список:</strong>
-<ul>
-    <li>Root</li>
-    <li>Kokker</li>
-    <li>popsik</li>
-</ul>
-</p>
+<!--    Компоненты React — это функции JavaScript, которые возвращают разметку:-->
+<!--</p>-->
+<!--<h3>Запись разметки с помощью JSX</h3>-->
+<!--<p>Синтаксис разметки, который вы видели выше, называется JSX. Он необязателен, но большинство проектов React используют-->
+<!--    JSX для удобства. Все инструменты, которые мы рекомендуем для локальной разработки поддерживают JSX из коробки.-->
+<!--    В JSX более строгие требования, чем в HTML. Вы должны закрывать теги типа &ltbr/&gt. Ваш компонент также не может-->
+<!--    возвращать несколько JSX-тегов</p>-->
+<!--<h4>Добавление стилей</h4>-->
+<!--<p>React не предписывает, как добавлять файлы CSS. В простейшем случае вы добавляете тег-->
+<!--    &ltlink&gt в HTML. Если вы используете инструмент сборки или фреймворк, обратитесь к его документации, чтобы узнать,-->
+<!--    как-->
+<!--    добавить CSS-файл в ваш проект.-->
+<!--</p>-->
+<!--<p><strong>Ну и естественно список:</strong>-->
+<!--<ul>-->
+<!--    <li>Root</li>-->
+<!--    <li>Kokker</li>-->
+<!--    <li>popsik</li>-->
+<!--</ul>-->
+<!--</p>-->
 
-<ol>
-    <li><em>Очистите чеснок от <strong>кожуры</strong> и крупно нарежьте.</em></li>
-    <li>Удалите стебель и семена у перца; крупно нарежьте перец.</li>
-    <li>Добавьте все ингредиенты в пищевой комбайн.</li>
-    <li>
-        Измельчите все ингредиенты до состояния пасты.
+<!--<ol>-->
+<!--    <li><em>Очистите чеснок от <strong>кожуры</strong> и крупно нарежьте.</em></li>-->
+<!--    <li>Удалите стебель и семена у перца; крупно нарежьте перец.</li>-->
+<!--    <li>Добавьте все ингредиенты в пищевой комбайн.</li>-->
+<!--    <li>-->
+<!--        Измельчите все ингредиенты до состояния пасты.-->
+<!--        <ul>-->
+<!--            <li>Если вы хотите <strong>"грубый"</strong> хумус, измельчайте пару минут.</li>-->
+<!--            <li>Если вам нужен гладкий хумус, измельчайте дольше.</li>-->
+<!--        </ul>-->
+<!--    </li>-->
+<!--</ol>-->
+
+<!--&lt;!&ndash; Научные наименования &ndash;&gt;-->
+<!--<p>-->
+<!--    Колибри обыкновенный (<i>архилоус обыкновенный</i>) — наиболее часто-->
+<!--    встречающийся вид колибри в северо-восточной Америке.-->
+<!--</p>-->
+
+<!--&lt;!&ndash; Иностранные слова &ndash;&gt;-->
+<!--<p>-->
+<!--    Случился прилив иностранных слов, таких как <i lang="uk-latn">vatrushka</i>,-->
+<!--    <i lang="id">nasi goreng</i> и <i lang="fr">soupe à l'oignon</i>.-->
+<!--</p>-->
+
+<!--&lt;!&ndash; Явно неправильное произношение или написание &ndash;&gt;-->
+<!--<p>Когда-нибудь я узнаю, как <u>гаварить</u> без ошибок.</p>-->
+
+<!--&lt;!&ndash; Выделение ключевых слов в инструкциях &ndash;&gt;-->
+<!--<ol>-->
+<!--    <li><b>Отрежьте</b> два ломтика хлеба.</li>-->
+<!--    <li><b>Добавьте</b> кусочек помидора и лист латука между ломтями хлеба.</li>-->
+<!--</ol>-->
+
+<!--<style>-->
+<!--    ul{-->
+<!--        color: red;-->
+<!--    }-->
+<!--</style>-->
+
+<!--<dl>-->
+<!--    <dt>soliloquy</dt>-->
+<!--    <dd>-->
+<!--        In drama, where a character speaks to themselves, representing their inner-->
+<!--        thoughts or feelings and in the process relaying them to the audience (but-->
+<!--        not to other characters.)-->
+<!--    </dd>-->
+<!--    <dt>monologue</dt>-->
+<!--    <dd>-->
+<!--        In drama, where a character speaks their thoughts out loud to share them-->
+<!--        with the audience and any other characters present.-->
+<!--    </dd>-->
+<!--    <dt>aside</dt>-->
+<!--    <dd>-->
+<!--        In drama, where a character shares a comment only with the audience for-->
+<!--        humorous or dramatic effect. This is usually a feeling, thought, or piece of-->
+<!--        additional background information.-->
+<!--    </dd>-->
+<!--</dl>-->
+
+<header>
+    <h1>Header</h1>                         <!--  блок заголовка -->
+</header>
+
+<nav>                                       <!--  блок панель навигации -->
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our team</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <form>
+        <input type="search" name="q" placeholder="Search query" />     <!-- блок формы ввода данных -->
+        <input type="submit" value="Go!" />
+    </form>
+</nav>
+
+<main>                                                                  <!-- блок основного содержимого документа -->
+
+    <article>                                                              <!-- блок выделения фрагмента контента -->
+        <h2>Article heading</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
+            lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
+            viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent
+            et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
+            congue enim, ut porta lorem lacinia consectetur.
+        </p>
+
+        <section>                                                                       <!-- блок логического раздела по одной теме -->
+            <h3>Subsection</h3>
+
+            <p>
+                Donec ut librero sed accu vehicula ultricies a non tortor. Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut
+                gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id
+                dolor.
+            </p>
+
+            <p>
+                Pelientesque auctor nisi id magna consequat sagittis. Curabitur
+                dapibus, enim sit amet elit pharetra tincidunt feugiat nist
+                imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed
+                odio eros.
+            </p>
+        </section>
+
+        <section>
+            <h3>Another subsection</h3>
+
+            <p>
+                Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
+                soclis natoque penatibus et manis dis parturient montes, nascetur
+                ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at
+                sem facilisis semper ac in est.
+            </p>
+
+            <p>
+                Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
+                tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
+                ultricied. Curabitur ornare, ligula semper consectetur sagittis,
+                nisi diam iaculis velit, is fringille sem nunc vet mi.
+            </p>
+        </section>
+    </article>
+
+    <aside>                <!-- блок боковой панели, комментариев, аннотаций, относящийся к основной теме но не её части -->
+        <h2>Related</h2>
+
         <ul>
-            <li>Если вы хотите <strong>"грубый"</strong> хумус, измельчайте пару минут.</li>
-            <li>Если вам нужен гладкий хумус, измельчайте дольше.</li>
+            <li><a href="#">Oh I do like to be beside the seaside</a></li>
+            <li><a href="#">Oh I do like to be beside the sea</a></li>
+            <li><a href="#">Although in the North of England</a></li>
+            <li><a href="#">It never stops raining</a></li>
+            <li><a href="#">Oh well…</a></li>
         </ul>
-    </li>
-</ol>
+    </aside>
+</main>
 
-<!-- Научные наименования -->
-<p>
-    Колибри обыкновенный (<i>архилоус обыкновенный</i>) — наиболее часто
-    встречающийся вид колибри в северо-восточной Америке.
-</p>
+<footer>                                                      <!-- нижний колонтитул -->
+    <p>©Copyright 2050 by nobody. All rights reversed.</p>
+</footer>
 
-<!-- Иностранные слова -->
-<p>
-    Случился прилив иностранных слов, таких как <i lang="uk-latn">vatrushka</i>,
-    <i lang="id">nasi goreng</i> и <i lang="fr">soupe à l'oignon</i>.
-</p>
-
-<!-- Явно неправильное произношение или написание -->
-<p>Когда-нибудь я узнаю, как <u>гаварить</u> без ошибок.</p>
-
-<!-- Выделение ключевых слов в инструкциях -->
-<ol>
-    <li><b>Отрежьте</b> два ломтика хлеба.</li>
-    <li><b>Добавьте</b> кусочек помидора и лист латука между ломтями хлеба.</li>
-</ol>
-
-<style>
-    ul{
-        color: red;
-    }
-</style>
 
 <script src="J.js "></script>
 </body>

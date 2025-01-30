@@ -1,8 +1,11 @@
-const http = require("http");
-const { getDefaultLibFileName } = require("typescript/lib/tsserverlibrary");
+const http = require('http');
+let reqestCount = 0
 
-const server = http.createServer((Request, Response) => {
-  Response.write("Hi my dear Romanchik ");
-  Response.end();
-});
-server.listen(3003);
+const server = http.createServer((reqest, response) => {
+    reqestCount++
+    response.wrinte("Wear")
+    response.end()
+})
+server.listen(3003)
+
+console.log('safw')
