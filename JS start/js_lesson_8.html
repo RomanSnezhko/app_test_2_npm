@@ -10,41 +10,42 @@
 
     // data Base
 
-    const qestions = [
+    const phrases = [
         {
-            qestion1: "Какой цвет идет первым в спекте солнечного света?",
-            answer1: "красный",
+            qestion: "Какой цвет идет первым в спектре солнечного света?",
+            answer: "красный",
         },
         {
-            qestion2: "Какой цвет идет вторым в спекте солнечного света",
-            answer2: "оранжевый",
+            qestion: "Какой цвет идет вторым в спектре солнечного света",
+            answer: "оранжевый",
         },
         {
-            qestion3: "Какой цвет идет третьим в спекте солнечного света",
-            answer3: "желтый",
+            qestion: "Какой цвет идет третьим в спектре солнечного света",
+            answer: "желтый",
         },
         {
-            qestion4: "Какой цвет идет четвертым в спекте солнечного света",
-            answer4: "зелёный",
+            qestion: "Какой цвет идет четвертым в спектре солнечного света",
+            answer: "зелёный",
         },
         {
-            qestion5: "Какой цвет идет пятым в спекте солнечного света?",
-            answer5: "голубой",
+            qestion: "Какой цвет идет пятым в спектре солнечного света?",
+            answer: "голубой",
         },
         {
-            qestion6: "Какой цвет идет шестым в спекте солнечного света?",
-            answer6: "синий",
+            qestion: "Какой цвет идет шестым в спектре солнечного света?",
+            answer: "синий",
         },
         {
-            qestion7: "Какой цвет идет седьмым в спекте солнечного света?",
-            answer7: "фиолетовый",
+            qestion: "Какой цвет идет седьмым в спектре солнечного света?",
+            answer: "фиолетовый",
         },
     ]
 
-    const numberAnswers = {
+    const answersStatistic = {
         correct: 0,
         uncorrect: 0,
-        allAnswers: 7,
+        allQestions: phrases.length,
+        minPercentCorrectAnswer: 50
     }
 
     const basicPrases = {
@@ -54,86 +55,102 @@
         negativeResult: "Потренируйся еще",
     }
 
-    const minPercentCorrectAnswer = 50
-
     // Programm
 
     alert(basicPrases.greeting)
     alert(basicPrases.colorPhrase)
 
+
     // question1
 
-    const userAnswer1 = prompt(qestions[0].qestion1)
-    if (qestions[0].answer1 === userAnswer1) {
-        numberAnswers.correct = numberAnswers.correct + 1
+    const useranswer1 = prompt(phrases[0].qestion)
+    if (phrases[0].answer === useranswer1) {
+        answersStatistic.correct = answersStatistic.correct + 1
     } else {
-        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
     }
 
     // question2
 
-    const userAnswer2 = prompt(qestions[1].qestion2,)
-    if (qestions[1].answer2 === userAnswer2) {
-        numberAnswers.correct = numberAnswers.correct + 1
+    const useranswer2 = prompt(phrases[1].qestion,)
+    if (phrases[1].answer === useranswer2) {
+        answersStatistic.correct = answersStatistic.correct + 1
     } else {
-        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
     }
 
     // question3
 
-    const userAnswer3 = prompt(qestions[2].qestion1,)
-    if (qestions[2].answer1 === userAnswer3) {
-        numberAnswers.correct = numberAnswers.correct + 1
+    const useranswer3 = prompt(phrases[2].qestion,)
+    if (phrases[2].answer === useranswer3) {
+        answersStatistic.correct = answersStatistic.correct + 1
     } else {
-        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
     }
 
     // question4
 
-    const userAnswer4 = prompt(qestions[3].qestion4,)
-    if (qestions[3].answer4 === userAnswer4) {
-        numberAnswers.correct = numberAnswers.correct + 1
+    const useranswer4 = prompt(phrases[3].qestion,)
+    if (phrases[3].answer === useranswer4) {
+        answersStatistic.correct = answersStatistic.correct + 1
     } else {
-        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
     }
 
     // question5
 
-    const userAnswer5 = prompt(qestions[4].qestion5,)
-    if (qestions[4].answer5 === userAnswer5) {
-        numberAnswers.correct = numberAnswers.correct + 1
+    const useranswer5 = prompt(phrases[4].qestion,)
+    if (phrases[4].answer === useranswer5) {
+        answersStatistic.correct = answersStatistic.correct + 1
     } else {
-        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
     }
 
     // question6
 
-    const userAnswer6 = prompt(qestions[5].qestion6,)
-    if (qestions[5].answer6 === userAnswer6) {
-        numberAnswers.correct = numberAnswers.correct + 1
+    const useranswer6 = prompt(phrases[5].qestion,)
+    if (phrases[5].answer === useranswer6) {
+        answersStatistic.correct = answersStatistic.correct + 1
     } else {
-        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
     }
 
     // question7
 
-    const userAnswer7 = prompt(qestions[6].qestion1,)
-    if (qestions[6].answer7 === userAnswer7) {
-        numberAnswers.correct = numberAnswers.correct + 1
+    const useranswer7 = prompt(phrases[6].qestion,)
+    if (phrases[6].answer === useranswer7) {
+        answersStatistic.correct = answersStatistic.correct + 1
     } else {
-        numberAnswers.uncorrect = numberAnswers.uncorrect + 1
+        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
     }
 
-    let correctAnswersPercent = numberAnswers.correct / numberAnswers.allAnswers * 100
-
-    alert("Количество правильных ответов: " + numberAnswers.correct)
-    alert("Количество ошибок: " + numberAnswers.uncorrect)
-
-    if (correctAnswersPercent > minPercentCorrectAnswer) {
-        alert(basicPrases.positiveResult)
-    } else {
-        alert(basicPrases.negativeResult)
+    function getPercentage( _answersStatistic, _answersStatistic ) {
+        return _answersStatistic.correct / _answersStatistic.allQestions * 100
     }
+
+    function resultPhrase() {
+        if (correctAnswersPercent > answersStatistic.minPercentCorrectAnswer) {
+            alert(basicPrases.positiveResult)
+        } else {
+            alert(basicPrases.negativeResult)
+        }
+    }
+
+
+        let correctAnswersPercent = getPercentage(answersStatistic, answersStatistic)
+
+        resultPhrase()
+
+        alert("Количество правильных ответов: " + answersStatistic.correct)
+        alert("Количество ошибок: " + answersStatistic.uncorrect)
+        alert("процент правильных ответов: " + correctAnswersPercent)
+
+        if (correctAnswersPercent > answersStatistic.minPercentCorrectAnswer) {
+            alert(basicPrases.positiveResult)
+        } else {
+            alert(basicPrases.negativeResult)
+        }
+
 
 </script>
 </body>
