@@ -61,85 +61,26 @@
     alert(basicPrases.colorPhrase)
 
 
-    // question1
 
-    const useranswer1 = prompt(phrases[0].qestion)
-    if (phrases[0].answer === useranswer1) {
-        answersStatistic.correct = answersStatistic.correct + 1
-    } else {
-        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
-    }
+    function start (_phrases, _answersStatistic) {
+        for (let i = 0; i < phrases.length; i++) {
 
-    // question2
+            const useranswer = prompt(_phrases[i].qestion)
 
-    const useranswer2 = prompt(phrases[1].qestion,)
-    if (phrases[1].answer === useranswer2) {
-        answersStatistic.correct = answersStatistic.correct + 1
-    } else {
-        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
-    }
+            if (phrases[i].answer === useranswer) {
+                _answersStatistic.correct = _answersStatistic.correct + 1
+            } else {
+                _answersStatistic.uncorrect = _answersStatistic.uncorrect + 1
+            }
 
-    // question3
-
-    const useranswer3 = prompt(phrases[2].qestion,)
-    if (phrases[2].answer === useranswer3) {
-        answersStatistic.correct = answersStatistic.correct + 1
-    } else {
-        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
-    }
-
-    // question4
-
-    const useranswer4 = prompt(phrases[3].qestion,)
-    if (phrases[3].answer === useranswer4) {
-        answersStatistic.correct = answersStatistic.correct + 1
-    } else {
-        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
-    }
-
-    // question5
-
-    const useranswer5 = prompt(phrases[4].qestion,)
-    if (phrases[4].answer === useranswer5) {
-        answersStatistic.correct = answersStatistic.correct + 1
-    } else {
-        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
-    }
-
-    // question6
-
-    const useranswer6 = prompt(phrases[5].qestion,)
-    if (phrases[5].answer === useranswer6) {
-        answersStatistic.correct = answersStatistic.correct + 1
-    } else {
-        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
-    }
-
-    // question7
-
-    const useranswer7 = prompt(phrases[6].qestion,)
-    if (phrases[6].answer === useranswer7) {
-        answersStatistic.correct = answersStatistic.correct + 1
-    } else {
-        answersStatistic.uncorrect = answersStatistic.uncorrect + 1
-    }
-
-    function getPercentage( _answersStatistic, _answersStatistic ) {
-        return _answersStatistic.correct / _answersStatistic.allQestions * 100
-    }
-
-    function resultPhrase() {
-        if (correctAnswersPercent > answersStatistic.minPercentCorrectAnswer) {
-            alert(basicPrases.positiveResult)
-        } else {
-            alert(basicPrases.negativeResult)
         }
     }
 
+    function getPercentage(_answersStatistic, _answersStatistic) {
+        return _answersStatistic.correct / _answersStatistic.allQestions * 100
+    }
 
-        let correctAnswersPercent = getPercentage(answersStatistic, answersStatistic)
-
-        resultPhrase()
+    function resultPhrases() {
 
         alert("Количество правильных ответов: " + answersStatistic.correct)
         alert("Количество ошибок: " + answersStatistic.uncorrect)
@@ -150,6 +91,13 @@
         } else {
             alert(basicPrases.negativeResult)
         }
+    }
+
+   start(phrases, answersStatistic)
+
+    let correctAnswersPercent = getPercentage(answersStatistic, answersStatistic)
+
+    resultPhrases()
 
 
 </script>
