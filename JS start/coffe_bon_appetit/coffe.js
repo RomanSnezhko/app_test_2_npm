@@ -172,43 +172,93 @@
 // }
 
 
-let meatProducts = [
-    {name: "A", price: 1, data: "1"},
-    {name: "B", price: 2, data: "2"},
-    {name: "C", price: 3, data: "3"}
+// let meatProducts = [
+//     {name: "A", price: 1, data: "1"},
+//     {name: "B", price: 2, data: "2"},
+//     {name: "C", price: 3, data: "3"}
+// ]
+// let fishProducts = [
+//     {name: "D", price: 4, data: "4"},
+//     {name: "E", price: 5, data: "5"},
+//     {name: "F", price: 6, data: "6"}
+// ]
+// let chickenProducts = [
+//     {name: "7", price: 7, data: "7"}
+// ]
+//
+//
+// let showcaseProducts = [
+//     {
+//         name: "meat", item: [
+//             {name: "A", price: 1, data: "1"},
+//             {name: "B", price: 2, data: "2"},
+//             {name: "C", price: 3, data: "3"}
+//         ]
+//     },
+//     {
+//         name: "fish", item: [
+//             {name: "D", price: 4, data: "4"},
+//             {name: "E", price: 5, data: "5"},
+//             {name: "F", price: 6, data: "6"}
+//         ]
+//     },
+//     {
+//         name: "chicken", item: [
+//             {name: "G", price: 7, data: "7"}
+//         ]
+//     }
+// ]
+//
+// let userName = "E"
+//
+// const resultSearch = showcaseProducts.find(resultSearch => resultSearch === userName)
+//
+// console.log(resultSearch)
+
+let array = [
+    {name: "A", item: 1},
+    {name: "B", item: 2},
+    {name: "C", item: 3},
+    {name: "D", item: 4},
 ]
-let fishProducts = [
-    {name: "D", price: 4, data: "4"},
-    {name: "E", price: 5, data: "5"},
-    {name: "F", price: 6, data: "6"}
-]
-let chickenProducts = [
-    {name: "7", price: 7, data: "7"}
-]
+//
+// let input = 'C'
+//
+// const resultSearch = array.filter(resultSearch => resultSearch.name === input)
+
+const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter((word) => word.length > 6);
+
+console.log(result);
 
 
 
-let showcaseProducts = [
-    {name: "meat", item: [
-            {name: "A", price: 1, data: "1"},
-            {name: "B", price: 2, data: "2"},
-            {name: "C", price: 3, data: "3"}
-        ]},
-    {name: "fish", item: [
-            {name: "D", price: 4, data: "4"},
-            {name: "E", price: 5, data: "5"},
-            {name: "F", price: 6, data: "6"}
-        ]},
-    {name: "chicken", item: [
-        {name: "G", price: 7, data: "7"}
-        ]}
-]
 
-let userName = "E"
 
-const resultSearch = showcaseProducts.find(resultSearch => resultSearch === userName)
 
-console.log(resultSearch)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
