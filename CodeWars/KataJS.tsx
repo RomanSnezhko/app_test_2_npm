@@ -448,8 +448,10 @@ Description:
 
 Solution:
 */
-        var TempleStrings = function(obj, feature) {
-            return `${obj} are ${feature}`
+        function generateRange(min, max, step) {
+            let result = [];
+            for (let i = min; i <= max; i += step) result.push(i);
+            return result;
         }
 /*
 6 kyu
