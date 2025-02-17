@@ -448,7 +448,9 @@ Description:
 
 Solution:
 */
-
+        var TempleStrings = function(obj, feature) {
+            return `${obj} are ${feature}`
+        }
 /*
 6 kyu
 
