@@ -418,13 +418,15 @@ Examples
 Solution:
 */
 
-        function toCamelCase(str){
-            var regExp=/[-_]\w/ig;
-            // @ts-ignore
-            return str.replace(regExp,function(match){
-                return match.charAt(1).toUpperCase();
-            });
-        }
+/*
+6 kyu
+
+Description:
+
+
+
+Solution:
+*/
 
 /*
 6 kyu
@@ -435,10 +437,7 @@ Description:
 
 Solution:
 */
-        function datingRange(age){
-            return age>=14?`${Math.floor(age/2+7)}-${Math.floor((age-7)*2)}`:
-                `${Math.floor(age-(age*0.1))}-${Math.floor(age+(age*0.1))}`
-        }
+
 /*
 6 kyu
 
@@ -448,25 +447,7 @@ Description:
 
 Solution:
 */
-        function generateRange(min, max, step) {
-            let result = [];
-            for (let i = min; i <= max; i += step) result.push(i);
-            return result;
-        }
-/*
-6 kyu
 
-Description:
-
-
-
-Solution:
-*/
-        function warnTheSheep(queue) {
-            const index=queue.indexOf('wolf')
-            return index===queue.length-1?"Pls go away and stop eating my sheep"
-                :`Oi! Sheep number ${queue.length-1-index}! You are about to be eaten by a wolf!`
-        }
 /*
 6 kyu
 
